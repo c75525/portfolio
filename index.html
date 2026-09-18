@@ -3,31 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Samuel Platten</title>
-  <meta name="description" content="A hub for Samuel Platten's personal projects.">
+  <title>Samuel Platten — Artist Portfolio</title>
+  <meta name="description" content="Samuel Platten is an artist in Phoenix, Arizona. Portfolio, projects, writing, computer graphics, music, and social links.">
+  <meta name="author" content="Samuel Platten">
+  <meta name="creator" content="Samuel Platten">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#fffbcf">
   <link rel="preload" href="./assets/fonts/ABCArealSuperfamilyVariable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="canonical" href="https://samuelplatten.com/">
-  <meta property="og:title" content="Samuel Platten">
-  <meta property="og:description" content="A personal project hub.">
+  <link rel="me" href="https://www.instagram.com/c75525/">
+  <link rel="me" href="https://www.instagram.com/basking______sundapple/">
+  <link rel="me" href="https://soundcloud.com/c75525">
+  <link rel="me" href="https://c75525.org/">
+  <meta property="og:site_name" content="Samuel Platten">
+  <meta property="og:title" content="Samuel Platten — Artist Portfolio">
+  <meta property="og:description" content="A portal for Samuel Platten's portfolio, projects, writing, computer graphics, music, and social links.">
   <meta property="og:url" content="https://samuelplatten.com/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Samuel Platten — Artist Portfolio">
+  <meta name="twitter:description" content="Portfolio, projects, writing, computer graphics, music, and social links.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Samuel Platten",
-    "jobTitle": "Artist",
-    "url": "https://samuelplatten.com/",
-    "homeLocation": {
-      "@type": "Place",
-      "name": "Phoenix, Arizona, US"
-    },
-    "sameAs": [
-      "https://www.instagram.com/c75525/",
-      "https://www.instagram.com/basking______sundapple/",
-      "https://c75525.org/",
-      "https://soundcloud.com/c75525"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://samuelplatten.com/#samuel-platten",
+        "name": "Samuel Platten",
+        "jobTitle": "Artist",
+        "url": "https://samuelplatten.com/",
+        "email": "mailto:samcplatten@gmail.com",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Phoenix, Arizona, US"
+        },
+        "sameAs": [
+          "https://www.instagram.com/c75525/",
+          "https://www.instagram.com/basking______sundapple/",
+          "https://c75525.org/",
+          "https://soundcloud.com/c75525"
+        ],
+        "knowsAbout": ["art", "artist portfolio", "computer graphics", "sound", "writing"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://samuelplatten.com/#website",
+        "url": "https://samuelplatten.com/",
+        "name": "Samuel Platten",
+        "description": "The official portfolio and project portal for artist Samuel Platten.",
+        "publisher": {"@id": "https://samuelplatten.com/#samuel-platten"}
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://samuelplatten.com/#webpage",
+        "url": "https://samuelplatten.com/",
+        "name": "Samuel Platten — Artist Portfolio",
+        "description": "A portal for Samuel Platten's portfolio, projects, writing, computer graphics, music, and social links.",
+        "isPartOf": {"@id": "https://samuelplatten.com/#website"},
+        "about": {"@id": "https://samuelplatten.com/#samuel-platten"}
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://samuelplatten.com/#links",
+        "name": "Samuel Platten project and social links",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Instagram", "url": "https://www.instagram.com/c75525/"},
+          {"@type": "ListItem", "position": 2, "name": "Computer Graphics", "url": "https://www.instagram.com/basking______sundapple/"},
+          {"@type": "ListItem", "position": 3, "name": "Blog", "url": "https://c75525.org/"},
+          {"@type": "ListItem", "position": 4, "name": "SoundCloud", "url": "https://soundcloud.com/c75525"},
+          {"@type": "ListItem", "position": 5, "name": "Contact", "url": "mailto:samcplatten@gmail.com"}
+        ]
+      }
     ]
   }
   </script>
@@ -47,6 +95,19 @@
       background: #fffbcf;
     }
 
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
+    }
+
     .artboard {
       display: block;
       width: min(85vw, calc(85vh * 612 / 792));
@@ -58,6 +119,21 @@
   </style>
 </head>
 <body>
+<main class="visually-hidden">
+  <h1>Samuel Platten — artist portfolio</h1>
+  <p>Samuel Platten is an artist in Phoenix, Arizona. This site is the central portal for portfolio work, projects, writing, computer graphics, music, social links, CV, and contact.</p>
+  <nav aria-label="Samuel Platten links">
+    <ul>
+      <li><a href="https://www.instagram.com/c75525/" rel="me">Instagram</a></li>
+      <li><a href="https://www.instagram.com/basking______sundapple/" rel="me">Computer Graphics</a></li>
+      <li><a href="#artworks">Artworks</a></li>
+      <li><a href="https://c75525.org/" rel="me">Blog</a></li>
+      <li><a href="https://soundcloud.com/c75525" rel="me">SoundCloud</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="mailto:samcplatten@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+</main>
 <svg class="artboard" role="img" aria-labelledby="site-title site-desc" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 792">
     <title id="site-title">Samuel Platten project hub</title>
     <desc id="site-desc">A clickable personal project hub based on Samuel Platten's artboard.</desc>
